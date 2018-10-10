@@ -1,0 +1,39 @@
+{
+  "name": "@livelybone/img-min",
+  "version": "1.0.0",
+  "description": "A module for image minify in both browser and node",
+  "main": "./lib/umd/index.js",
+  "module": "./lib/es/index.js",
+  "unpkg": "./lib/umd/index.js",
+  "scripts": {
+    "build": "rimraf ./lib && cross-env NODE_ENV=production rollup -c",
+    "eslint": "eslint ./src",
+    "test": "npm run build && mocha ./test/index.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/livelybone/img-min.git"
+  },
+  "keywords": [
+    "image",
+    "img",
+    "minify",
+    "compress",
+    "browser",
+    "node"
+  ],
+  "author": "livelybone(2631541504@qq.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/livelybone/img-min/issues"
+  },
+  "homepage": "https://github.com/livelybone/img-min#readme",
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "mocha": "^5.2.0",
+    "rollup": "^0.65.0",
+    "rollup-plugin-commonjs": "^9.1.6",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^5.0.2"
+  }
+}
