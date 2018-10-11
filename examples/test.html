@@ -3,15 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ImgMin</title>
+  <title>ImgAbout</title>
   <script src="../lib/umd/index.js"></script>
 </head>
 <body>
-<div id="module"></div>
+<input type="file" accept="image/*" id="module">
+
+<img src="" alt="" id="img" onload="log()">
 
 <script>
 var module = document.getElementById('module')
 // do something ...
+module.addEventListener('change', function (e) {
+  var file = e.target.files[0]
+  ImgAbout.imgMinify(file, {
+    compressType: 'fixedWidth',
+    width: 200,
+    quality: 1,
+    toBlob: false
+  }).then(function (val) {
+    // console.log(val)
+    document.getElementById('img').src = val
+    console.log(document.getElementById('img').complete)
+  })
+})
+
+function log() {
+  console.log('loaded')
+}
 </script>
 </body>
 </html>

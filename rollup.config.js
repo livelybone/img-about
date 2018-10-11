@@ -1,8 +1,8 @@
 import fs from 'fs'
 import path from 'path'
-import { uglify } from 'rollup-plugin-uglify'
-import resolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
+import resolve from 'rollup-plugin-node-resolve'
+import { uglify } from 'rollup-plugin-uglify'
 
 const formats = ['es', 'umd']
 
@@ -22,9 +22,9 @@ const conf = entry => ({
   output: entry.formats.map(format => ({
     file: `./lib/${format}/${entry.name}.js`,
     format,
-    name: 'index' === entry.name ? 'ImgMin' : `${entry.name}ImgMin`,
+    name: 'index' === entry.name ? 'ImgAbout' : entry.name,
   })),
-  external: entry.external ? [''] : [],
+  external: entry.external ? ['base64-blob'] : [],
   plugins: [
     resolve(),
     commonjs(),

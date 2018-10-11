@@ -1,4 +1,4 @@
-const ImgMin = require('../lib/umd/index')
+const ImgAbout = require('../lib/umd/index')
 
 describe('index', () => {
   it('', () => {

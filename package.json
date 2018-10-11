@@ -1,7 +1,7 @@
 {
-  "name": "@livelybone/img-min",
+  "name": "img-about",
   "version": "1.0.0",
-  "description": "A module for image minify in both browser and node",
+  "description": "A module for image minify in browser",
   "main": "./lib/umd/index.js",
   "module": "./lib/es/index.js",
   "unpkg": "./lib/umd/index.js",
@@ -12,22 +12,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/livelybone/img-min.git"
+    "url": "https://github.com/livelybone/img-about.git"
   },
   "keywords": [
     "image",
     "img",
+    "naturalWidth/naturalHeight",
     "minify",
     "compress",
-    "browser",
-    "node"
+    "browser"
   ],
   "author": "livelybone(2631541504@qq.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/livelybone/img-min/issues"
+    "url": "https://github.com/livelybone/img-about/issues"
   },
-  "homepage": "https://github.com/livelybone/img-min#readme",
+  "homepage": "https://github.com/livelybone/img-about#readme",
   "devDependencies": {
     "eslint": "^5.3.0",
     "mocha": "^5.2.0",
@@ -35,5 +35,8 @@
     "rollup-plugin-commonjs": "^9.1.6",
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-uglify": "^5.0.2"
+  },
+  "dependencies": {
+    "base64-blob": "^1.2.1"
   }
 }
