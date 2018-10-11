@@ -43,7 +43,7 @@ Use in html, see what your can use in [CDN: unpkg](https://unpkg.com/img-about/l
 ## Functions
 
 ### getNaturalSize
-> `(url: String) => Promise<Object: {width, height}>`
+> `(url: [String, Image]) => Promise<Object: {width, height}>`
 
 ### imgMinify
 > `(imgFile: [File, Blob], minifyOptions: MinifyOptions) => Promise<[Blob, String]>`
