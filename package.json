@@ -1,6 +1,6 @@
 {
   "name": "img-about",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A module for image deal, includes getting naturalSize, minifying in browser",
   "main": "./lib/umd/index.js",
   "module": "./lib/es/index.js",
