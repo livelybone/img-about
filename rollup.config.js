@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import commonjs from 'rollup-plugin-commonjs'
 import resolve from 'rollup-plugin-node-resolve'
+import license from 'rollup-plugin-license'
 import { uglify } from 'rollup-plugin-uglify'
 
 const formats = ['es', 'umd']
@@ -24,11 +25,18 @@ const conf = entry => ({
     format,
     name: 'index' === entry.name ? 'ImgAbout' : entry.name,
   })),
-  external: entry.external ? ['base64-blob'] : [],
+  external: entry.external ? ['base64-blob', '@livelybone/copy'] : [],
   plugins: [
     resolve(),
     commonjs(),
     (entry.needUglify !== false && uglify()),
+    license({
+      banner: `Bundle of <%= pkg.name %>
+               Generated: <%= moment().format('YYYY-MM-DD') %>
+               Version: <%= pkg.version %>
+               License: <%= pkg.license %>
+               Author: <%= pkg.author %>`,
+    }),
   ]
 })
 

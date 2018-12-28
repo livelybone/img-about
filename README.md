@@ -12,7 +12,7 @@ A module for image deal, includes getting naturalSize, minifying in browser
 https://github.com/livelybone/img-about.git
 
 ## Demo
-http://livelybone.github.io/img-about/
+https://livelybone.github.io/tool/img-about
 
 ## Installation
 ```bash
