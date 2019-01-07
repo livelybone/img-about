@@ -1,6 +1,6 @@
 {
   "name": "img-about",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A module for image deal, includes getting naturalSize, minifying in browser",
   "main": "./lib/umd/index.js",
   "module": "./lib/es/index.js",
@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/livelybone/img-about/issues"
   },
-  "homepage": "https://livelybone.github.io/tool/img-about",
+  "homepage": "https://livelybone.github.io/tool/img-about/",
   "devDependencies": {
     "eslint": "^5.3.0",
     "mocha": "^5.2.0",
