@@ -1,7 +1,10 @@
 import getNaturalSize from './getNaturalSize'
-import imgMinify from './imgMinify'
+import imgCompress from './imgCompress'
+import { canvasSupport, getSizeOfUrl } from './utils'
 
 export {
   getNaturalSize,
-  imgMinify,
+  imgCompress,
+  getSizeOfUrl,
+  canvasSupport
 }

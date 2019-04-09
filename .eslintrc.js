@@ -7,7 +7,7 @@ module.exports = {
   'extends': 'eslint:recommended',
   'parserOptions': {
     'ecmaVersion': 5,
-    'sourceType': 'module',
+    'sourceType': 'module'
   },
   'rules': {
     'indent': [
