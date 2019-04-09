@@ -14,7 +14,7 @@ import { canvasSupport } from './utils'
  * @param   { Boolean }     compressOptions.toBlob            default to true
  * @return  { Promise }
  * */
-export default function imgMinify(imgFile, compressOptions) {
+export default function imgCompress(imgFile, compressOptions) {
   if (!canvasSupport) {
     return Promise.reject(new Error('Canvas is not supported in your browser'))
   }
