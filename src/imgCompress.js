@@ -19,6 +19,13 @@ export default function imgCompress(imgFile, compressOptions) {
     return Promise.reject(new Error('Canvas is not supported in your browser'))
   }
 
+  if (!(imgFile instanceof File || imgFile instanceof Blob)) {
+    return Promise.reject(new Error(
+      'The type of param `imgFile` is not matched' +
+      ' It should be an instance of one of the File and Blob'
+    ))
+  }
+
   var compressTypes = [
     'scale',        // Resize the image by `options.scale`
     'fixedWidth',   // Set the width of the image to a fixed value -- `options.imageSize`

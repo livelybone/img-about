@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ImgAbout</title>
+  <script src="./promise-polyfill.js"></script>
   <script src="../lib/umd/index.js"></script>
 </head>
 <body>
@@ -15,6 +16,7 @@
 var module = document.getElementById('module')
 // do something ...
 module.addEventListener('change', function (e) {
+  console.log(e.target, e.target.files, e.originalEvent.dataTransfer)
   var file = e.target.files[0]
   console.log(file)
   ImgAbout.imgCompress(file, {
@@ -31,6 +33,11 @@ module.addEventListener('change', function (e) {
 function log() {
   console.log('loaded')
 }
+
+ImgAbout.getNaturalSize('http://img95.699pic.com/photo/50038/1181.jpg_wh300.jpg')
+  .then(function (size) {
+    console.log(size.width, size.height)
+  })
 </script>
 </body>
 </html>

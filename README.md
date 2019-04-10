@@ -8,7 +8,7 @@
 
 A module for image processing in browser, includes getting naturalSize, zooming, compressing... wrapped by Promise
 
-You may need a Promise polyfill while use old IE browser
+You may need a Promise polyfill while use old IE browser( >= IE9 )
 
 ## repository
 https://github.com/livelybone/img-about.git

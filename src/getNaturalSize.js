@@ -10,10 +10,7 @@ export default function getNaturalSize(img) {
   return new Promise(function (res, rej) {
     if (typeof img === 'string') {
       res(getSizeOfUrl(img))
-    } else if (
-      img instanceof Image
-      || img instanceof Element
-    ) {
+    } else if (img instanceof Image) {
       if (img.naturalWidth) {
         res({ width: img.naturalWidth, height: img.naturalHeight })
       } else {
