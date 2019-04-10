@@ -47,7 +47,7 @@ export default function imgCompress(imgFile, compressOptions) {
   // Merge options
   if (compressOptions) {
     Object.keys(defaultOptions).forEach(function (key) {
-      options[key] = compressOptions[key] !== undefined
+      options[key] = compressOptions[key]
         ? compressOptions[key] : defaultOptions[key]
     })
   }

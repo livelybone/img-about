@@ -16,11 +16,11 @@
 var module = document.getElementById('module')
 // do something ...
 module.addEventListener('change', function (e) {
-  console.log(e.target, e.target.files, e.originalEvent.dataTransfer)
   var file = e.target.files[0]
   console.log(file)
   ImgAbout.imgCompress(file, {
     compressType: 'fixedWidth',
+    imageType: '',
     quality: 0.8,
     toBlob: true
   }).then(function (val) {
