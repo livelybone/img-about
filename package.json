@@ -1,6 +1,6 @@
 {
   "name": "img-about",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A module for image processing in browser, includes getting naturalSize, zooming, compressing... wrapped by Promise",
   "main": "./lib/umd/index.js",
   "module": "./lib/es/index.js",
@@ -35,9 +35,9 @@
   "homepage": "https://livelybone.github.io/tool/img-about/",
   "devDependencies": {
     "commitizen": "^3.0.7",
-    "conventional-changelog-cli": "^2.0.12",
+    "conventional-changelog-cli": "^2.0.21",
     "cz-conventional-changelog": "^2.1.0",
-    "eslint": "^5.3.0",
+    "eslint": "^5.16.0",
     "mocha": "^5.2.0",
     "rollup": "^1.9.0",
     "rollup-plugin-commonjs": "^9.3.4",
