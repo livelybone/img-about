@@ -1,6 +1,6 @@
 {
   "name": "img-about",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "A module for image processing in browser, includes getting naturalSize, zooming, compressing... wrapped by Promise",
   "main": "./lib/umd/index.js",
   "module": "./lib/es/index.js",
