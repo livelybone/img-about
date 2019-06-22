@@ -18,12 +18,16 @@
   },
   "keywords": [
     "image",
-    "img",
+    "natural",
+    "size",
     "naturalSize",
+    "natural",
+    "width",
     "naturalWidth",
+    "natural",
+    "height",
     "naturalHeight",
     "zoom",
-    "scale",
     "compress",
     "browser"
   ],
