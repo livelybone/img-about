@@ -23,7 +23,7 @@ export function getSizeOfUrl(url) {
 }
 
 /**
- * Determine if the canvas is available
+ * Whether the canvas is available in current browser
  * */
 var canvasSupport = (function () {
   var canvas = document.createElement('canvas')

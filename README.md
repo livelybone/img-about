@@ -2,6 +2,7 @@
 [![NPM Version](http://img.shields.io/npm/v/img-about.svg?style=flat-square)](https://www.npmjs.com/package/img-about)
 [![Download Month](http://img.shields.io/npm/dm/img-about.svg?style=flat-square)](https://www.npmjs.com/package/img-about)
 ![gzip with dependencies: 1.3kb](https://img.shields.io/badge/gzip--with--dependencies-1.3kb-brightgreen.svg "gzip with dependencies: 1.3kb")
+![typescript](https://img.shields.io/badge/typescript-supported-blue.svg "typescript")
 ![pkg.module](https://img.shields.io/badge/pkg.module-supported-blue.svg "pkg.module")
 
 > `pkg.module supported`, which means that you can apply tree-shaking in you project
@@ -26,7 +27,7 @@ npm i -S img-about
 
 ## Usage
 ```js
-import {getNaturalSize, imgCompress} from 'img-about';
+import {getNaturalSize, imgCompress, canvasSupport, getSizeOfUrl } from 'img-about';
 ```
 
 when you want to set this module as external while you are developing another module, you should import it like this:
